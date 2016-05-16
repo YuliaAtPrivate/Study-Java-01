@@ -7,7 +7,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Created by jatlasova on 07/05/16.
+ * Created by Yuta-At on 07/05/16.
  * Tests for Yandex Dictionary API
  */
 public class YaDictTest {
