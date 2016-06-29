@@ -1,6 +1,11 @@
+package dictionary;
+
+import Ut.YaUtils;
 import beans.YaDictionary;
 import dictionary.RestAssuredRequester;
 import org.junit.Test;
+
+import java.util.concurrent.ConcurrentMap;
 
 import static dictionary.YADictionaryData.YA_DICT_DEF_LANG;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -15,7 +20,11 @@ public class YaDictTest {
 
     @Test
     public void getDictRespForHome() {
+
+        YaDictionary data =
         RestAssuredRequester.reqOpenDictionaryClient(YA_DICT_DEF_LANG, "home");
+        YaUtils.logInfo(data.toString());
     }
 
 }
+
